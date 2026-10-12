@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - منصة التقنية والذكاء الاصطناعي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo">Tech<span>Hub</span></div>
+        <nav class="top-nav">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="pricing.html">جدول الأسعار</a>
+            <a href="contact.html" class="active">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <h1>نموذج التواصل والطلب</h1>
+        <p style="color: #64748b; margin-bottom: 25px;">أرسل تفاصيل مشروعك وسنتواصل معك في أقرب وقت ممكن:</p>
+
+        <!-- نموذج التواصل التفاعلي المتكامل -->
+        <form class="contact-form" action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="fullname">الاسم الكامل:</label>
+                <input type="text" id="fullname" name="fullname" required placeholder="أدخل اسمك الكامل">
+            </div>
+
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required placeholder="name@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="service-select">اختر نوع الخدمة المطلوبة:</label>
+                <select id="service-select" name="service">
+                    <option value="web">تصميم وتطوير الويب</option>
+                    <option value="ai">نماذج الذكاء الاصطناعي</option>
+                    <option value="control">أنظمة التحكم الآلي</option>
+                    <option value="consulting">استشارات تقنية</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>نوع الدعم المطلوب:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="support" value="standard" checked> عاجل</label>
+                    <label><input type="radio" name="support" value="vip"> استشاري خاص</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">ملاحظات أو رسالة إضافية:</label>
+                <textarea id="message" name="message" rows="4" placeholder="اكتب تفاصيل مشروعك هنا..."></textarea>
+            </div>
+
+            <button type="submit" class="btn" style="width: 100%;">إرسال الطلب</button>
+        </form>
+
+        <!-- قسم الخريطة عبر iframe -->
+        <section style="margin-top: 40px;">
+            <h2 style="margin-bottom: 15px;">موقعنا الجغرافي</h2>
+            <div style="border-radius: 10px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.4!2d44.2!3d15.35!2m3!1f0!2f0!3f0!3m2!1f1024!2f768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMTXCsDIxJzAwLjAiTiA0NMKwMTInMDAuMCJF!5e0!3m2!1sar!2s!4v1600000000000!5m2!1sar!2s" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>جميع الحقوق محفوظة © 2026 - مشروع تصميم الويب</p>
+    </footer>
+
+</body>
+</html>
